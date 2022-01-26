@@ -1,0 +1,16 @@
+.about__back{
+    width: 70%;
+    border-radius: 50%;
+    background: #910C6A;
+    border: none;
+    margin-top: -22.42%;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 4.43% 
+}
+
+.about__back:after{
+    content: '';
+    display: block;
+    padding-top: 100%;
+}

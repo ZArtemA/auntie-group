@@ -1,0 +1,10 @@
+.about__title{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFB048;
+    margin: 9.1% 4.4% 4.4%;
+    overflow-wrap: break-word;
+}

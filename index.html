@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Auntie Group</title>
+    <meta name="description" content="тестовое задание от Auntie Group">
+</head>
+
+<body class="page">
+    <main class="page__container">
+        <section class="form">
+            <h1 class="form__title">Регистрационные данные</h1>
+            <form class="form__main" id="form" method="post" name="form">
+                <label class="form__label">
+                <span class="form__text">Логин (мин. 3 символа):*</span>
+                    <input type="text" name="link" id="login" placeholder="От 2 до 40 символов" class="form__input" required>
+                    <span class="form__input-error" id="login-error"></span>
+                </label>
+                <div class="form__submit-block">
+                    <label class="form__label">
+                        <span class="form__text">E-Mail:*</span>
+                        <input type="email" name="mail" id="mail" placeholder="231@asdd.ss" class="form__input form__input_mail" required>
+                        <span class="form__input-error" id="mail-error"></span>
+                    </label>
+                    <button class="form__btn-save" type="submit" value="Редактировать" aria-label="Редактировать">Редактировать</button>
+                    <p class="form__warning"><span class="form__warning_attension">Важно!</span> При регистрации Вы не указали свою электронную почту, либо указали почту которую мы не смогли проверить. Без верно указанного адреса E-mail Вы не сможете восстановить пароль от своей учетной записи и получить сообщения о важных событиях. Укажите свою электронную почту и пользуйтесь сайтом без ограничений!
+                        Для того, чтобы изменить адрес электронной почты, укажите номер телефона.</p>
+                </div>
+                <label class="form__label">
+                    <span class="form__text">Новый пароль:</span>
+                    <input type="password" name="password" id="password" class="form__input" minlength="6" required>
+                    <span class="form__input-error" id="password-error"></span>
+                    <p class="form__warning">Пароль должен быть не менее 6 символов, содержать знаки пунктуации (,.<>/?;:'"[]{}\|`~!@#$%^&*()-_+=).</p>
+                </label>
+                <label class="form__label">
+                    <span class="form__text">Подтверждение нового пароля:</span>
+                    <input type="password" name="password-confirm" id="password-confirm" class="form__input" required>
+                    <span class="form__input-error" id="password-confirm-error">Неправильный формат данных</span>
+                </label>
+                <label class="form__label">
+                    <span class="form__text">Номер сотового*:</span>
+                    <input type="tel" name="phone" id="phone" class="form__input" required>
+                    <span class="form__input-error" id="phone-error"></span>
+                </label>
+                <label class="form__label">
+                    <span class="form__text">Местоположение пользователя * :</span>
+                    <div class="form__region-selector">
+                <select class="form__input form__input_selector" name="country" id="country-select">
+                    <option  class="form__menu" id="russia" selected>Россия</option>
+                    <option  class="form__menu" id="ucraine">Украина</option>
+                </select>
+                <select class="form__input form__input_selector" name="region" id="region">
+                <optgroup id="1">
+                    <option  class="form__menu" value="belgorodskaya" selected>Белгородская область</option>
+                    <option  class="form__menu" value="kurskaya">Курская область</option>
+                    <option  class="form__menu" value="voronejskaya">Воронежская область</option>
+                </optgroup>
+                <optgroup id="2">
+                    <option  class="form__menu" value="kharkovskaya">Харьковская область</option>
+                    <option  class="form__menu" value="sumskaya">Сумская область</option>
+                    <option  class="form__menu" value="luganskaya">Луганская область</option>
+                </optgroup>
+                </select>
+                <select class="form__input form__input_selector" name="city" id="city" type="text">
+                    <optgroup id="1-1">
+                    <option  class="form__menu" value="rakitnoe" selected>Ракитное</option>
+                    <option  class="form__menu" value="proletarskii">Пролетарский</option>
+                    <option  class="form__menu" value="krasnaya-yaruga">Красная Яруга</option>
+                </optgroup>
+                <optgroup id="1-2">
+                    <option  class="form__menu" value="polevaya">Полевая</option>
+                    <option  class="form__menu" value="ploskoe">Плоское</option>
+                    <option  class="form__menu" value="shumakovka">Шумаковка</option>
+                </optgroup>
+                <optgroup id="1-3">
+                    <option  class="form__menu" value="mitrofanofka">Митрофановка</option>
+                    <option  class="form__menu" value="kamenka">Каменка</option>
+                    <option  class="form__menu" value="olhovatka">Ольховатка</option>
+                </optgroup>
+                <optgroup id="2-1">
+                    <option  class="form__menu" value="glubokaya">Глубокая</option>
+                    <option  class="form__menu" value="lukiyancy">Лукьянцы</option>
+                    <option  class="form__menu" value="zelenoe">Зеленое</option>
+                </optgroup>
+                <optgroup id="2-2">
+                    <option  class="form__menu" value="mogrica">Могрица</option>
+                    <option  class="form__menu" value="ugroedy">Угроеды</option>
+                    <option  class="form__menu" value="krasnopolie">Краснополье</option>
+                </optgroup>
+                <optgroup id="2-3">
+                    <option  class="form__menu" value="beloluck">Белолуцк</option>
+                    <option  class="form__menu" value="solidarnoe">Солидарное</option>
+                    <option  class="form__menu" value="doncovka">Донцовка</option>
+                </optgroup>
+                </select>
+            </div>
+            </label>
+            <label class="form__label">
+                <span class="form__text">ФИО (полностью): *</span>
+                <input type="text" name="name" id="name" class="form__input" required>
+                <span class="form__input-error" id="name-error"></span>
+            </label>
+            <label class="form__label">
+                <span class="form__text">Дата рождения (DD.MM.YYYY): *</span>	
+                <input type="date" name="date" id="date" class="form__input" required>
+                <span class="form__input-error" id="date-error"></span>
+            </label>
+            <label class="form__label">
+                <span class="form__text">Skype</span>
+                <input type="text" name="skype" id="skype" class="form__input" required>
+                <span class="form__input-error" id="skype-error"></span>
+            </label>
+            </form>
+        </section>
+        <section class="about">
+            <div class="about__content">
+            <h2 class="about__title">Корпорация «Aunite Group» — это один из крупнейших кэшбэк&#8209;сервисов в России и СНГ. 
+            </h2>
+            <div class="about__text">
+            <p>Сегодня любому пользователю или партнеру Корпорации доступны:</p>
+                <ul class="about__text_list">
+                <li>- Кэшбэк в 800+ интернет-магазинах;</li>
+                <li>- Скидки в 9000+ компаниях по всей России;</li>
+                <li>- Оплата товаров и услуг из личного кабинета;</li>
+                <li>- Уникальная 9-уровневая партнерская программа.</li>
+                </ul>
+                </div>
+            </div>
+            <div class="about__media">
+                <div class="about__responsive">
+            <iframe class="about__frame" src="https://www.youtube.com/embed/PM0kra8-SNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <div class="about__back"></div>
+        </div>
+        </section>
+        <section class="to-do">
+            <ol class="to-do__list">
+                <li class="to-do__point" value="1">Выберете в списке ниже проект, ссылкой на который хотите поделиться</li>
+                <li class="to-do__point" value="2">Нажмите кнопку скопировать - ваша ссылка будет скопирована в буфер обмена</li>
+                <li class="to-do__point" value="3">Вставьте вашу ссылку, нажав правой кнопкой мыши и выбрав "Вставить" или воспользуйтесь комбинацией клавиш CTRL-V</li>
+            </ol>
+        </section>
+        <section class="cashback">
+            <div class="casback__block">
+                <img class="cashback__image">
+                <h3 class="cashback__title"></h3>
+                <input class="cashback__link"></input>
+                <a href="#"><button class="cashback__button-link"></button></a>
+                <button class="casback__button-copy">Копировать ссылку</button>
+            </div>
+            <div class="casback__block">
+                <img class="cashback__image">
+                <h3 class="cashback__title"></h3>
+                <input class="cashback__link"></input>
+                <a href="#"><button class="cashback__button-link"></button></a>
+                <button class="casback__button-copy">Копировать ссылку</button>
+            </div>
+            <div class="casback__block">
+                <img class="cashback__image">
+                <h3 class="cashback__title"></h3>
+                <input class="cashback__link"></input>
+                <a href="#"><button class="cashback__button-link"></button></a>
+                <button class="casback__button-copy">Копировать ссылку</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

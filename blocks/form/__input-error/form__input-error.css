@@ -1,0 +1,10 @@
+.form__input-error{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    color: #EB5C44;
+    margin-top: 4px;
+    display: block;
+}

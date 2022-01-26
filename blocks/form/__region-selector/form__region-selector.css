@@ -1,0 +1,6 @@
+.form__region-selector{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid: repeat(3, 1fr) / auto;
+}

@@ -1,0 +1,9 @@
+.page {
+    font-family: 'Inter', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+}

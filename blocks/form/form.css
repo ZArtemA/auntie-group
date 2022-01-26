@@ -1,0 +1,8 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 21.1% 1.38% 11.94% 4.17%;
+    padding-right: 3.33%;
+    color: #343A40;
+}
