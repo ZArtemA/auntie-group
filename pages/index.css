@@ -16,8 +16,10 @@
 @import url(../blocks/form/__title/form__title.css);
 @import url(../blocks/form/__warning/form__warning.css);
 @import url(../blocks/form/__warning/_attension/form__warning_attension.css);
+
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__media/about__media.css);
+@import url(../blocks/about/__content/about__content.css);
 @import url(../blocks/about/__frame/about__frame.css);
 @import url(../blocks/about/__text/about__text.css);
 @import url(../blocks/about/__text/_list/about__text_list.css);
@@ -28,6 +30,16 @@
 @import url(../blocks/to-do/to-do.css);
 @import url(../blocks/to-do/__list/to-do__list.css);
 @import url(../blocks/to-do/__point/to-do__point.css);
+@import url(../blocks/to-do/__wrapper/to-do__wrapper.css);
+@import url(../blocks/to-do/__text/to-do__text.css);
+@import url(../blocks/cashback/cashback.css);
+@import url(../blocks/cashback/__block/cashback__block.css);
+@import url(../blocks/cashback/__image/cashback__image.css);
+@import url(../blocks/cashback/__title/cashback__title.css);
+@import url(../blocks/cashback/__link/cashback__link.css);
+@import url(../blocks/cashback/__input-link/cashback__input-link.css);
+@import url(../blocks/cashback/__button-link/cashback__button-link.css);
+@import url(../blocks/cashback/__button-copy/cashback__button-copy.css);
 
 section, div, main{
     border: 1px solid red;

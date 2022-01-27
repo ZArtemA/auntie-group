@@ -1,3 +1,18 @@
 .about__content{
-    margin: 0 0 15px;
+    margin: 9.16% 4.44%;
+    width: auto;
+    max-width: 679px;
+}
+
+@media screen and (min-width: 648px) {
+
+    .about__content{
+        margin: 3.125% 5.86% 4.44%;
+    }
+}
+
+@media screen and (min-width: 1034px) {
+    .about__content{
+        margin: 0;
+    }
 }

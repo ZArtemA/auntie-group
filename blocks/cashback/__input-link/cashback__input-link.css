@@ -1,0 +1,25 @@
+.cashback__input-link{
+    display: block;
+    width: auto;
+    margin-right: 16px;
+    padding: 14px 2px 14px 16px;
+    border-radius: 6px;
+    border: 1px solid #343A40;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    -o-text-overflow: clip;
+    -ms-text-overflow: clip;
+    text-overflow: clip;
+    flex-grow: 2;
+}
+
+@media screen and (min-width: 1202px) {
+    .cashback__input-link{  
+        padding-right: 6px;
+        -o-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+}

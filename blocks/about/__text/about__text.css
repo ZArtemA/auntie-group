@@ -1,9 +1,14 @@
 .about__text{
-    font-family: 'Montserrat', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    margin: 0 4.4%;
+}
+
+@media screen and (min-width: 648px) {
+    .about__text{
+        font-size: 16px;
+        line-height: 20px;
+    }
 }

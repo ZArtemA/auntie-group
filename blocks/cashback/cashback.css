@@ -1,0 +1,23 @@
+.cashback{
+    margin: 10px 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 324px);
+    grid-auto-rows: auto;
+    padding: 0;
+    justify-content: center;
+    gap: 32px 20.48px;
+}
+
+
+@media screen and (min-width: 648px) {
+    .cashback{
+        gap: 40px 30.48px;
+    }
+}
+
+@media screen and (min-width: 1034px) {
+    .cashback{  
+        grid-template-columns: repeat(auto-fit, 380px);
+    }
+}

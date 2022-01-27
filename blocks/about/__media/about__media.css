@@ -9,3 +9,23 @@
     align-items: center;
     position: relative;
 }
+
+@media screen and (min-width: 648px) {
+    .about__media{
+        margin-left: 5.86%;
+        margin-right: 5.86%;
+        margin-bottom: 3.52%;
+        background-size: 61.2% 212px;
+        flex-direction: row-reverse;
+        align-items: center;
+        background-position: 17% 100%;
+    }
+}
+
+@media screen and (min-width: 1034px) {
+    .about__media{
+        margin-bottom: 2.05%;
+        background-size: 66.2% 258px;
+        z-index: -1;
+    }
+}

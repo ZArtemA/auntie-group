@@ -1,7 +1,10 @@
 .to-do__list{
-    display: grid;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
     list-style-type: none;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', Arial, sans-serif;
+    position: relative;
 }

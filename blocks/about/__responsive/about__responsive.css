@@ -6,3 +6,22 @@
     width: 91.12%;
     position: relative;
 }
+
+
+@media screen and (min-width: 648px) {
+    .about__responsive{
+        height: 0;
+        padding-bottom: 26.07%;
+        margin: 0;
+        width: 46%;
+    }
+}
+
+@media screen and (min-width: 1034px) {
+    .about__responsive{
+        height: 0;
+        padding-bottom: 56.586%;
+        margin: 0 4.44%;
+        width: 91.12%;
+    }
+}

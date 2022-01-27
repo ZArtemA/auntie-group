@@ -1,4 +1,6 @@
 .to-do{
     width: 100%;
-    margin: 40px 0;
+    max-width: 1182px;
+    margin: 40px auto;
+    z-index: 0;
 }

@@ -1,0 +1,41 @@
+.to-do__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    content: attr(value);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    width: 176px;
+    height: 176px;
+    border: none;
+    margin-bottom: -1.4rem;
+    position: relative;
+    z-index: -1;
+}
+
+
+.to-do__point:first-of-type .to-do__wrapper::after,
+.to-do__point:nth-of-type(2) .to-do__wrapper::after
+{
+    display: block;
+    content: "";
+    width: 50vw;
+    border-top: 4px dashed #FFB208;
+    position: absolute;
+    left: 105%;
+    top: 50%;
+}
+
+.to-do__point:nth-of-type(2) .to-do__wrapper::before,
+.to-do__point:last-of-type .to-do__wrapper::before
+{
+    display: block;
+    content: "";
+    width: 50vw;
+    border-top: 4px dashed #FFB208;
+    position: absolute;
+    right: 105%;
+    top: 50%;
+}
