@@ -1,0 +1,7 @@
+.form__pseudo-input {
+	display: none;
+}
+  
+.form__pseudo-input:checked + label {
+	background-color: #dedede;
+}

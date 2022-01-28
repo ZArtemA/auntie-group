@@ -19,6 +19,11 @@
 @import url(../blocks/form/__submit-block/form__submit-block.css);
 @import url(../blocks/form/__warning/form__warning.css);
 @import url(../blocks/form/__warning/_attension/form__warning_attension.css);
+@import url(../blocks/form/__selector/form__selector.css);
+@import url(../blocks/form/__option-start/form__option-start.css);
+@import url(../blocks/form/__content/form__content.css);
+@import url(../blocks/form/__pseudo-input/form__pseudo-input.css);
+@import url(../blocks/form/__option/form__option.css);
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__main/about__main.css);
 @import url(../blocks/about/__media/about__media.css);
@@ -42,6 +47,9 @@
 @import url(../blocks/cashback/__input-link/cashback__input-link.css);
 @import url(../blocks/cashback/__button-link/cashback__button-link.css);
 @import url(../blocks/cashback/__button-copy/cashback__button-copy.css);
+
+
+ 
 
 /*
 .frame{

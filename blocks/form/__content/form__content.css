@@ -1,0 +1,15 @@
+.form__content {
+	position: absolute;
+	top: 40px;
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 2px);
+	background-color: #ffffff;
+	border: 1px solid #343A40;
+	border-top: none;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	transition: all 0.3s ease-out;
+	opacity: 0;
+	z-index: 8;
+  }

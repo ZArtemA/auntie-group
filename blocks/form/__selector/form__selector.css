@@ -1,0 +1,22 @@
+.form__selector {
+	position: relative;
+	width: 100%;
+}
+	
+.form__selector[data-state="active"]  .form__option-start::before {
+	transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.form__selector[data-state="active"] .form__option-start::after {
+	transform: translate(3px, -50%) rotate(45deg);
+}
+
+.form__selector[data-state="active"] .form__content {
+	opacity: 1;
+}
+
+.form__selector[data-state="active"] .form__option + .form__pseudo-input + .form__option {
+	max-height: 40px;
+	border-top-width: 1px;
+}
+  

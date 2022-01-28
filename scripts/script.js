@@ -1,7 +1,39 @@
 const page = document.querySelector('.page');
 const frame = page.querySelector('.about__frame');
 
+const selectors = page.querySelectorAll('.form__selector');
+const arrSelectors = Array.from(selectors);
 
+
+arrSelectors.forEach((item)=>{
+    let selectorTitles = item.querySelectorAll('.form__option-start');
+    let selectorLabels = item.querySelectorAll('.form__option');
+
+
+    for (let i = 0; i < selectorTitles.length; i++) {
+        selectorTitles[i].addEventListener('click', () => {
+        if ('active' === item.getAttribute('data-state')) {
+            item.setAttribute('data-state', '');
+        } else {
+            item.setAttribute('data-state', 'active');
+        }
+      });
+    }
+      
+      
+      for (let i = 0; i < selectorLabels.length; i++) {
+          selectorLabels[i].addEventListener('click', (evt) => {
+            selectorTitles.textContent = evt.target.textContent;
+          item.setAttribute('data-state', '');
+        });
+      }
+
+})
+
+
+
+
+/*
 window.onload = () => {
     let iframeLink = document.createElement('link');
     iframeLink.href = 'fileName.css';
@@ -48,7 +80,7 @@ function playFullscreen (){
     }
 }
 	
-function loadPlaylistVideoIds(); {
+function loadPlaylistVideoIds() {
   player.loadPlaylist({
       'playlist': ['9HPiBJBCOq8', 'Mp4D0oHEnjc', '8y1D8KGtHfQ', 'jEEF_50sBrI'],
       'listType': 'playlist',
@@ -106,4 +138,4 @@ function progress (event) {
   var newTime = player.getDuration() * (Xinner / line_width);
 
   player.seekTo(newTime);
-}
+}*/

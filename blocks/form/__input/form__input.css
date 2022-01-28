@@ -2,7 +2,7 @@
     width: 100%;
     height: 48px;
     background: #FFFFFF;
-    border: 1px solid #979797;
+    border: 1px solid #343A40;
     padding: 14px 16px;
     max-width: 880px;
     margin: 0;
@@ -10,6 +10,22 @@
     border-radius: 6px;
     position: relative;
 }
+
+.form__input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 100%;
+    left: -1.5em;
+    background: url("../../../images/calendar.svg") no-repeat;
+    background-position: top -3.25px right 18px;
+    background-size: 27px;
+    position: absolute;
+  } 
+
+  .form__input[type="date"]::-webkit-datetime-edit-month-field
+  .form__input[type="date"]::-webkit-datetime-edit-day-field
+  .form__input[type="date"]::-webkit-datetime-edit-year-field {
+    content: "1"
+  } 
+
 
 .form__input::placeholder{
     font-style: normal;

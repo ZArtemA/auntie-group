@@ -1,0 +1,18 @@
+.form__option {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	max-height: 0;
+	padding: 0 16px;
+	transition: all 0.2s ease-out;
+	cursor: pointer;
+	overflow: hidden;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 20px;
+}
+  
+.form__option:hover {
+	  background-color: #c9c9c9;
+	  color: #ffffff;
+}

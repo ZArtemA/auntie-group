@@ -59,54 +59,73 @@
                 <div class="form__label">
                     <span class="form__text">Местоположение пользователя * :</span>
                     <div class="form__region-selector">
-                <select class="form__input form__input_selector" name="country" id="country-select">
-                    <option  class="form__menu" id="russia" selected>Россия</option>
-                    <option  class="form__menu" id="ucraine">Украина</option>
-                </select>
-                <select class="form__input form__input_selector" name="region" id="region">
-                <optgroup id="1">
-                    <option  class="form__menu" value="belgorodskaya" selected>Белгородская область</option>
-                    <option  class="form__menu" value="kurskaya">Курская область</option>
-                    <option  class="form__menu" value="voronejskaya">Воронежская область</option>
-                </optgroup>
-                <optgroup id="2">
-                    <option  class="form__menu" value="kharkovskaya">Харьковская область</option>
-                    <option  class="form__menu" value="sumskaya">Сумская область</option>
-                    <option  class="form__menu" value="luganskaya">Луганская область</option>
-                </optgroup>
-                </select>
-                <select class="form__input form__input_selector" name="city" id="city" type="text">
-                    <optgroup id="1-1">
-                    <option  class="form__menu" value="rakitnoe" selected>Ракитное</option>
-                    <option  class="form__menu" value="proletarskii">Пролетарский</option>
-                    <option  class="form__menu" value="krasnaya-yaruga">Красная Яруга</option>
-                </optgroup>
-                <optgroup id="1-2">
-                    <option  class="form__menu" value="polevaya">Полевая</option>
-                    <option  class="form__menu" value="ploskoe">Плоское</option>
-                    <option  class="form__menu" value="shumakovka">Шумаковка</option>
-                </optgroup>
-                <optgroup id="1-3">
-                    <option  class="form__menu" value="mitrofanofka">Митрофановка</option>
-                    <option  class="form__menu" value="kamenka">Каменка</option>
-                    <option  class="form__menu" value="olhovatka">Ольховатка</option>
-                </optgroup>
-                <optgroup id="2-1">
-                    <option  class="form__menu" value="glubokaya">Глубокая</option>
-                    <option  class="form__menu" value="lukiyancy">Лукьянцы</option>
-                    <option  class="form__menu" value="zelenoe">Зеленое</option>
-                </optgroup>
-                <optgroup id="2-2">
-                    <option  class="form__menu" value="mogrica">Могрица</option>
-                    <option  class="form__menu" value="ugroedy">Угроеды</option>
-                    <option  class="form__menu" value="krasnopolie">Краснополье</option>
-                </optgroup>
-                <optgroup id="2-3">
-                    <option  class="form__menu" value="beloluck">Белолуцк</option>
-                    <option  class="form__menu" value="solidarnoe">Солидарное</option>
-                    <option  class="form__menu" value="doncovka">Донцовка</option>
-                </optgroup>
-                </select>
+                        <div class="form__selector" id="country" data-state="">
+                            <div class="form__option-start" data-default="Option 0">Россия</div>
+                            <div class="form__content">
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Россия</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Украина</label>
+                            </div>
+                          </div>
+                          <div class="form__selector" id="region" data-state="">
+                            <div class="form__option-start" data-default="Option 0">Белгородская область</div>
+                            <div class="form__content">
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Белгородская область</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Курская область</label>
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Воронежская область</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Харьковская область</label>
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Сумская область</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Луганская область</label>
+                            </div>
+                          </div>
+                          <div class="form__selector" id="city" data-state="">
+                            <div class="form__option-start" data-default="Option 0">Ракитное</div>
+                            <div class="form__content">
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Ракитное</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Пролетарский</label>
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Красная Яруга</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Полевая</label>
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Плоское</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Шумаковка</label>
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Митрофановка</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Каменка</label>
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Ольховатка</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Глубокая</label>
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect0" class="form__option">Лукьянцы</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Зеленое</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Могрица</label>
+                              <input id="singleSelect0" class="form__pseudo-input" type="radio" name="singleSelect"/>
+                              <label for="singleSelect0" class="form__option">Угроеды</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Краснополье</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Белолуцк</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Солидарное</label>
+                              <input id="singleSelect1" class="form__pseudo-input" type="radio" name="singleSelect" />
+                              <label for="singleSelect1" class="form__option">Донцовка</label>
+                            </div>
+                          </div>
             </div>
             </div>
             <label class="form__label">
