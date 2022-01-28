@@ -4,3 +4,9 @@
     grid-gap: 10px;
     grid: repeat(3, 1fr) / auto;
 }
+
+@media screen and (min-width: 1200px) {
+    .form__region-selector{
+        grid: auto / repeat(3, 1fr);
+    }
+}

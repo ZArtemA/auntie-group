@@ -20,14 +20,13 @@
 @media screen and (min-width: 648px) {
     .about__back{
         width: 31.89%;
-        margin: 0 9.8% 10.6px auto;
+        margin: 2% 9.8% 10.6px auto;
     }
 }
 
-@media screen and (min-width: 1034px) {
+@media screen and (min-width: 1200px) {
     .about__back{
-        width: 70%;
-
-        margin-bottom: 0;
+        width: 33.79%;
+        margin: 7.7% auto 7.5% 11%;
     }
 }

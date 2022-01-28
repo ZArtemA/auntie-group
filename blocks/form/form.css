@@ -1,8 +1,23 @@
 .form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 21.1% 1.38% 11.94% 4.17%;
-    padding-right: 3.33%;
-    color: #343A40;
+    align-items: center;
+    margin: 21.1% 1.38% 43px 4.17%;
+    padding-right: 12px;
+}
+
+@media screen and (min-width: 648px) {
+    .form{
+        align-items: flex-start;
+        margin: 112px 4.16% 43px 5.86%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .form{
+        margin: 100px auto 40px;
+        padding-right: 0;
+        max-width: 1182px;
+    }
 }

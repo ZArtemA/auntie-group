@@ -1,16 +1,4 @@
 .about{
     width: 100%;
     background: #343A40;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 0;
-}
-
-@media screen and (min-width: 1034px) {
-    .about{
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }

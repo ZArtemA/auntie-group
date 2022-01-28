@@ -1,0 +1,13 @@
+.form__input_error{
+    border: 1px solid #E5243A;
+    position: relative;
+    color: #EB5C44;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    content: "";
+}
+
+.form__input_error:invalid{
+    content: "U+2757";
+}

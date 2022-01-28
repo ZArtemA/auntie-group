@@ -4,4 +4,7 @@
     font-size: 12px;
     line-height: 15px;
     margin: 16px 0 8px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    overflow-wrap: break-word;
 }

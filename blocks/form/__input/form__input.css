@@ -3,6 +3,12 @@
     height: 48px;
     background: #FFFFFF;
     border: 1px solid #979797;
+    padding: 14px 16px;
+    max-width: 880px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
 }
 
 .form__input::placeholder{
@@ -11,4 +17,11 @@
     font-size: 16px;
     line-height: 20px;
     color: #979797;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .form__input{
+        max-width: 100%;
+    }
 }

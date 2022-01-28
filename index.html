@@ -16,36 +16,47 @@
             <form class="form__main" id="form" method="post" name="form">
                 <label class="form__label">
                 <span class="form__text">Логин (мин. 3 символа):*</span>
+                <div class="form__line">
                     <input type="text" name="link" id="login" placeholder="От 2 до 40 символов" class="form__input" required>
                     <span class="form__input-error" id="login-error"></span>
+                    </div>
                 </label>
-                <div class="form__submit-block">
                     <label class="form__label">
                         <span class="form__text">E-Mail:*</span>
+                        <div class="form__submit-block">
+                        <div class="form__line">
                         <input type="email" name="mail" id="mail" placeholder="231@asdd.ss" class="form__input form__input_mail" required>
                         <span class="form__input-error" id="mail-error"></span>
+                        </div>
+                        <button class="form__btn-save" type="submit" value="Редактировать" aria-label="Редактировать">Редактировать</button>
+                        <p class="form__warning"><span class="form__warning_attension">Важно!</span> При регистрации Вы не указали свою электронную почту, либо указали почту которую мы не смогли проверить. Без верно указанного адреса E-mail Вы не сможете восстановить пароль от своей учетной записи и получить сообщения о важных событиях. Укажите свою электронную почту и пользуйтесь сайтом без ограничений!
+                            Для того, чтобы изменить адрес электронной почты, укажите номер телефона.</p>    
+                    </div>
                     </label>
-                    <button class="form__btn-save" type="submit" value="Редактировать" aria-label="Редактировать">Редактировать</button>
-                    <p class="form__warning"><span class="form__warning_attension">Важно!</span> При регистрации Вы не указали свою электронную почту, либо указали почту которую мы не смогли проверить. Без верно указанного адреса E-mail Вы не сможете восстановить пароль от своей учетной записи и получить сообщения о важных событиях. Укажите свою электронную почту и пользуйтесь сайтом без ограничений!
-                        Для того, чтобы изменить адрес электронной почты, укажите номер телефона.</p>
                 </div>
                 <label class="form__label">
                     <span class="form__text">Новый пароль:</span>
+                    <div class="form__line">
                     <input type="password" name="password" id="password" class="form__input" minlength="6" required>
                     <span class="form__input-error" id="password-error"></span>
                     <p class="form__warning">Пароль должен быть не менее 6 символов, содержать знаки пунктуации (,.<>/?;:'"[]{}\|`~!@#$%^&*()-_+=).</p>
+                    </div>
                 </label>
                 <label class="form__label">
                     <span class="form__text">Подтверждение нового пароля:</span>
-                    <input type="password" name="password-confirm" id="password-confirm" class="form__input" required>
-                    <span class="form__input-error" id="password-confirm-error">Неправильный формат данных</span>
+                    <div class="form__line form__line_error">
+                    <input type="text" name="password-confirm" id="password-confirm" class="form__input" required>
+                    <span class="form__input-error form__input-error_visible" id="password-confirm-error">Неправильный формат данных</span>
+                        </div>
                 </label>
                 <label class="form__label">
                     <span class="form__text">Номер сотового*:</span>
+                    <div class="form__line">
                     <input type="tel" name="phone" id="phone" class="form__input" required>
                     <span class="form__input-error" id="phone-error"></span>
+                    </div>
                 </label>
-                <label class="form__label">
+                <div class="form__label">
                     <span class="form__text">Местоположение пользователя * :</span>
                     <div class="form__region-selector">
                 <select class="form__input form__input_selector" name="country" id="country-select">
@@ -97,25 +108,32 @@
                 </optgroup>
                 </select>
             </div>
-            </label>
+            </div>
             <label class="form__label">
                 <span class="form__text">ФИО (полностью): *</span>
+                <div class="form__line">
                 <input type="text" name="name" id="name" class="form__input" required>
                 <span class="form__input-error" id="name-error"></span>
+                </div>
             </label>
             <label class="form__label">
-                <span class="form__text">Дата рождения (DD.MM.YYYY): *</span>	
+                <span class="form__text">Дата рождения (DD.MM.YYYY): *</span>
+                <div class="form__line">
                 <input type="date" name="date" id="date" class="form__input" required>
                 <span class="form__input-error" id="date-error"></span>
+                </div>
             </label>
             <label class="form__label">
                 <span class="form__text">Skype</span>
+                <div class="form__line">
                 <input type="text" name="skype" id="skype" class="form__input" required>
                 <span class="form__input-error" id="skype-error"></span>
+                </div>
             </label>
             </form>
         </section>
         <section class="about">
+        <div class="about__main">
             <div class="about__content">
             <h2 class="about__title">Корпорация «Aunite Group» — это один из крупнейших кэшбэк&#8209;сервисов в России и СНГ. 
             </h2>
@@ -134,6 +152,7 @@
             <iframe class="about__frame" src="https://www.youtube.com/embed/PM0kra8-SNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             <div class="about__back"></div>
+        </div>
         </div>
         </section>
         <section class="to-do">

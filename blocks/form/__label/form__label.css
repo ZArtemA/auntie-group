@@ -1,3 +1,16 @@
 .form__label{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .form__label{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+    }
 }
