@@ -2,12 +2,12 @@
     width: 100%;
     display: grid;
     grid-gap: 10px;
-    grid: repeat(3, 1fr) / auto;
-    max-width: 880px;
+    grid: repeat(3, 1fr) / 100%;
 }
 
 @media screen and (min-width: 1200px) {
     .form__region-selector{
         grid: auto / repeat(3, 1fr);
+        max-width: 880px;
     }
 }

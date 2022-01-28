@@ -13,3 +13,9 @@
         margin-bottom: 24px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .form__title{
+        margin-left: 2%;
+    }
+}
