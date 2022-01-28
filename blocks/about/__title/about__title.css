@@ -8,7 +8,7 @@
     overflow-wrap: break-word;
 }
 
-@media screen and (min-width: 1034px) {
+@media screen and (min-width: 1200px) {
     .about__title{
         font-size: 32px;
         line-height: 39px;
