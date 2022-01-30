@@ -9,6 +9,8 @@
 @import url(../blocks/form/__label/form__label.css);
 @import url(../blocks/form/__text/form__text.css);
 @import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__input/_date-inactive/form__input_date-inactive.css);
+@import url(../blocks/form/__input/_date-active/form__input_date-active.css);
 @import url(../blocks/form/__line/_error/form__line_error.css);
 @import url(../blocks/form/__line/form__line.css);
 @import url(../blocks/form/__input-error/form__input-error.css);
@@ -33,6 +35,7 @@
 @import url(../blocks/about/__title/about__title.css);
 @import url(../blocks/about/__frame/about__frame.css);
 @import url(../blocks/about/__responsive/about__responsive.css);
+@import url(../blocks/about/__video-overlay/about__video-overlay.css);
 @import url(../blocks/about/__back/about__back.css);
 @import url(../blocks/to-do/to-do.css);
 @import url(../blocks/to-do/__list/to-do__list.css);
@@ -47,75 +50,3 @@
 @import url(../blocks/cashback/__input-link/cashback__input-link.css);
 @import url(../blocks/cashback/__button-link/cashback__button-link.css);
 @import url(../blocks/cashback/__button-copy/cashback__button-copy.css);
-
-
- 
-
-/*
-.frame{
-    width: auto;
-    margin: 0;
-}
-.panel {
-	width: 850px; 
-	height: 40px; 
-	background: grey;
-	margin-top: -5px;
-	border: 1px solid #aaa;
-}
-#play, #back, #next, #pause{
-	float: left;
-	width: 50px;
-	height: 40px;
-}
-#time{
-	float: left;
-	width: 50px;
-	height: 40px;
-	color: #fff;
-	padding-top: 10px;
-	margin-left: 10px;
-}
-#line{
-	margin-top: 15px;	
-	height: 4px;
-	width: 350px;
-	background: #fff;
-	float: left;
-	margin-right: 15px;
-}
-#volume {
-	float: left;
-	width: 80px;
-	height: 40px;
-}
-#quality{
-	float: left;
-	width: 50px;
-	height: 40px;
-	color: #fff;
-	padding-top: 10px;
-	margin-left: 10px;
-}
-#full {
-	float: left;
-	width: 75px;
-	height: 40px;
-}
-#fader {
-	background: black;
-	border-radius: 5px;
-	width: 10px;
-	height: 10px;
-	position: relative;
-	z-index: 4;
-	bottom: 3px;
-}
-#playlist {
-	margin-top: 20px;
-}
-.viewed {
-	position: absolute;
-	background: red;
-	height: 4px;
-}

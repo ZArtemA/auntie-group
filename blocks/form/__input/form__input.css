@@ -11,21 +11,6 @@
     position: relative;
 }
 
-.form__input[type="date"]::-webkit-calendar-picker-indicator {
-    width: 100%;
-    left: -1.5em;
-    background: url("../../../images/calendar.svg") no-repeat;
-    background-position: top -3.25px right 18px;
-    background-size: 27px;
-    position: absolute;
-  } 
-
-  .form__input[type="date"]::-webkit-datetime-edit-month-field
-  .form__input[type="date"]::-webkit-datetime-edit-day-field
-  .form__input[type="date"]::-webkit-datetime-edit-year-field {
-    content: "1"
-  } 
-
 
 .form__input::placeholder{
     font-style: normal;

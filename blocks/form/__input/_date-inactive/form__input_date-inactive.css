@@ -1,0 +1,20 @@
+.form__input_date-inactive {
+    color: #fff;
+  } 
+
+.form__input_date-inactive::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+.form__input_date-inactive::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+.form__input_date-inactive::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+.form__input_date-inactive::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}

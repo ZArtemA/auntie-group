@@ -1,0 +1,8 @@
+.form__input_date-active::-webkit-calendar-picker-indicator {
+    width: 100%;
+    left: -1.5em;
+    background: url("../../../../images/calendar.svg") no-repeat;
+    background-position: top -3.25px right 18px;
+    background-size: 27px;
+    position: absolute;
+  } 
