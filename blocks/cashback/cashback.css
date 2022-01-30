@@ -1,5 +1,5 @@
 .cashback{
-    margin: 10px 16px;
+    margin: 10px 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 324px);
