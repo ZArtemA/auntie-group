@@ -13,22 +13,32 @@ arrSelectors.forEach((item)=>{
 
 
     for (let i = 0; i < selectorTitles.length; i++) {
-        selectorTitles[i].addEventListener('click', () => {
+      let elem = selectorTitles[i];
+      let context = elem.closest('.form__selector');
+      function checkListener(e){
+        if(!context.contains(e.target)){
+          document.removeEventListener('click', checkListener);
+          item.setAttribute('data-state', '');
+         }
+         console.log('2')
+      }
+      elem.addEventListener('click', () => {
         if ('active' === item.getAttribute('data-state')) {
-            item.setAttribute('data-state', '');
+          item.setAttribute('data-state', '');
         } else {
-            item.setAttribute('data-state', 'active');
+          item.setAttribute('data-state', 'active');
+          document.addEventListener('click', checkListener);
         }
       });
+      for (let i = 0; i < selectorLabels.length; i++) {
+        selectorLabels[i].addEventListener('click', (evt) => {
+        elem.textContent = evt.target.textContent;
+        item.setAttribute('data-state', '');
+      });
+    }
     }
       
       
-      for (let i = 0; i < selectorLabels.length; i++) {
-          selectorLabels[i].addEventListener('click', (evt) => {
-            selectorTitles.textContent = evt.target.textContent;
-          item.setAttribute('data-state', '');
-        });
-      }
 
 })
 
